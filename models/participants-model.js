@@ -18,6 +18,6 @@ let participantSchema = new schema({
     }
 });
 
-const Event = mongoose.model('Event', participantSchema);
+const Participant = mongoose.model('Participant', participantSchema);
 
-module.exports = Event;
+module.exports = Participant;
