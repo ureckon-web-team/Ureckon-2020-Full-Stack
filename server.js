@@ -1,6 +1,10 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const passport = require("passport");
+
+// Passport config
+require("./strategy/passport")(passport);
 
 // Set view engine
 app.set("view engine", "ejs");
@@ -8,6 +12,10 @@ app.set("view engine", "ejs");
 // Express BodyParser
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Static files middleware:
 app.use(express.static(path.join(__dirname, "/public")));
