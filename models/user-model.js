@@ -31,6 +31,10 @@ let userSchema = new schema({
         type: Boolean,
         default: true
     },
+    Role: {
+        type: schema.Types.ObjectId,
+        required: true
+    }
 });
 
 const User = mongoose.model('User', userSchema);
