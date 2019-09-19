@@ -17,7 +17,7 @@
             <img class="logo" src="images/ureckon_white.svg" alt="">
             <div id="signinbox">
                 <form id="signinform" action="/auth/login" method="post">
-                    <input name="username" type="text" class="inputfield" placeholder="Username" required />
+                    <input name="email" type="email" class="inputfield" placeholder="Email" required />
                     <input name="password" type="Password" class="inputfield" placeholder="Password" required />
                     <button id="loginsubmit" type="submit" class="inputsubmit">Sign In</button>
                 </form>
@@ -27,12 +27,12 @@
             </div>
             <div id="signupbox">
                 <form id="signupform" action="/auth/signup" method="post">
-                    <input name="username" type="text" class="inputfield" placeholder="Username" required />
-                    <input name="password1" type="Password" class="inputfield" placeholder="Password" required />
-                    <input name="password2" type="Password" class="inputfield" placeholder="Confirm Password" required />
+                    <input name="name" type="text" class="inputfield" placeholder="Name" required />
                     <input name="email" type="email" class="inputfield" placeholder="Email" required />
-                    <input name="collegename" type="text" class="inputfield" placeholder="College Name" required />
-                    <input name="telno" type="tel" class="inputfield" placeholder="Mobile Number" required />
+                    <input name="password" type="Password" class="inputfield" placeholder="Password" required />
+                    <input name="password2" type="Password" class="inputfield" placeholder="Confirm Password" required />                    
+                    <input name="college" type="text" class="inputfield" placeholder="College Name" required />
+                    <input name="phone" type="tel" class="inputfield" placeholder="Mobile Number" required />
                     <button id="signupsubmit" type="submit" class="inputsubmit">Sign Up</button>
                 </form>
                 
