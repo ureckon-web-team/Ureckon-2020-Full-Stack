@@ -25,6 +25,11 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+// Get route for gallery page
+app.get("/gallery", (req, res) => {
+    res.render("gallery");
+});
+
 app.use("/auth", require("./routes/auth"));
 
 const PORT = process.env.PORT || 5000;
